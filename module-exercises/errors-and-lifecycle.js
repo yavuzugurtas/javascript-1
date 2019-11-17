@@ -58,38 +58,38 @@ function missingInConst() {
 evaluate(missingInConst)
 
 function unexpectedToken1() {
-  const a = 1:
+  const a = 1;
 }
 evaluate(unexpectedToken1);
 
 function unexpectedToken2() {
-  const x = 3];
+  const x = 3;
 }
 evaluate(unexpectedToken2);
 
 function unexpectedToken3() {
-  let a = { b: 3 };
-  let b = a.b.3;
+  let a = { b: 3, 'my-attribute' : 'string' };
+  let b = a['my-attribute'];
 }
 evaluate(unexpectedToken3);
 
 function unexpectedToken4() {
-  const str = "he told me "run!" the horse arrives!";
+  const str = "he told me \"run!\" the horse arrives!";
 }
 evaluate(unexpectedToken4);
 
 function missingAfterElement1() {
-  const myArray = [1, 2, 3;
+  const myArray = [1, 2, 3];
 }
 evaluate(missingAfterElement1)
 
 function missingAfterElement1() {
-  const myArray = [1, 2 3];
+  const myArray = [1, 2, 3];
 }
 evaluate(missingAfterElement1)
 
 function missingBeforeformal() {
-  function getNine {
+  function getNine() {
     const x = 6, y = 3;
     return x + y;
   }
@@ -97,8 +97,8 @@ function missingBeforeformal() {
 evaluate(missingBeforeformal);
 
 function unEscapedLineBreak() {
-  const a = 'this is
-  two lines';
+  const a = `this is
+  two lines`;
 }
 evaluate(unEscapedLineBreak);
 
@@ -107,8 +107,8 @@ evaluate(unEscapedLineBreak);
 // these are detected at runtime and will throw an error after the page has loaded
 
 function invalidAssignment() {
-  const x = 1;
-  x++;
+  let x = 1;
+  x++; // x= x + 1
 }
 evaluate(invalidAssignment);
 
@@ -120,7 +120,7 @@ evaluate(notAFunction1);
 
 function notAFunction2() {
   let array = [];
-  array.length()
+  array.length
 }
 evaluate(notAFunction2);
 
@@ -132,7 +132,7 @@ evaluate(isUndefined);
 
 function isNotDefined() {
   const x = { b: 'e' };
-  const y = b.e;
+  const y = x.b;
 }
 evaluate(isNotDefined)
 

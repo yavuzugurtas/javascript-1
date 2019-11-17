@@ -1,5 +1,13 @@
-your tasks in this week's project:
-* write functions to pass the tests in the ```./logic``` folder
-* structure, style & responsivize the ```./index.html``` file
 
-the handlers all work as they are.  nothing to change, but still good to study!
+## Week 3 Project
+
+
+
+```js
+
+  <a href="https://yavuzugurtas.github.io/javascript-1/week-3-project/"> Another failed coup attemp</a> 
+
+
+Note: Could not figure out how to handle with javascript. I think i am going to understand asap. Need more practice. I Will update week 3 project when I understand clearly
+
+```

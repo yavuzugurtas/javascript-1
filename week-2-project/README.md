@@ -1,3 +1,11 @@
-In this week's project you have two goals:
-1. Write some JavaScript to complete each handler function.  We have already set up the handlers to read user input from from the DOM and write your result to the DOM, the handlers also already are conn
-1. Make a better UI than the one we gave you: practice HTML5 semantic structuring, correct CSS & responsive design
+
+## Week 2 Project
+
+
+
+
+
+  <a href="https://yavuzugurtas.github.io/javascript-1/week-2-project/"> Failed coup attemp</a> 
+
+
+Note: Could not figure out how to handle with javascript. I think i am going to handle it. Need more practice. I Will update week 2 project. 
